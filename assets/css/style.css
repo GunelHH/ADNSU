@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+  height: 45px;
+  background-color: #1a265c;
+}
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  /* z-index: 0; */
+}
+
+.top-nav .search {
+  margin-right: 20px;
+}
+.top-nav .search,
+.flag {
+  padding-top: 12px;
+}
+.top-nav .search input {
+  border: none;
+
+  background-color: transparent;
+  width: 60px;
+  transition: 600ms;
+}
+.top-nav .search input:hover {
+  width: 120px;
+}
+.top-nav .search input:focus {
+  background-color: #1a265c;
+  box-shadow: rgba(100, 100, 228, 0.993) 0px 3px 8px;
+}
+.top-nav .search input::placeholder {
+  color: #aaabbb;
+}
+.top-nav .search i {
+  color: white;
+}
+.top-nav .search input {
+  border: none;
+  outline: none;
+  color: #1a265c;
+}
+.top-nav .flag ul {
+  display: flex;
+}
+.top-nav .flag ul li:last-child {
+  margin-right: 100px;
+}
+.top-nav .flag ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+.middle-nav {
+  width: 212px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 50px;
+  border-radius: 7px;
+}
+.middle-nav a img {
+  width: 100%;
+  position: absolute;
+  box-shadow: 2px 11px 16px rgb(0 0 0 / 80%);
+}
+.container-bottom {
+  margin: 0 100px;
+}
+.bottom-nav .container-bottom ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.bottom-nav .container-bottom ul li:nth-child(3) {
+  margin-left: 200px;
+}
+.bottom-nav .container-bottom ul li {
+  list-style: none;
+  margin-right: 100px;
+  font-size: 20px;
+}
+.bottom-nav .container-bottom ul li a {
+  text-decoration: none;
+  color: #1a265c;
+}
+.bottom-nav {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 75px;
+}
+.bottom-nav .container-bottom ul li:hover {
+  border-bottom: 2px solid #1a265c;
+  /* width: 200px; */
+}
+@media screen and (max-width: 700px) {
+  .bottom-nav .container-bottom ul li {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .bottom-nav {
+    display: none;
+  }
+}
